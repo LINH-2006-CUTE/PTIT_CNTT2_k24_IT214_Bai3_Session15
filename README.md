@@ -1,13 +1,3 @@
-# Bai tap 3: Trien khai Choreography Saga voi Apache Kafka
-
-## 1. Muc tieu bai hoc
-- Ap dung mo hinh Saga Choreography de xu ly giao dich phan tan giua cac module: Order, Payment va Notification.
-- Thuc hien giao tiep bat dong bo qua Apache Kafka voi Producer va Consumer.
-- Hieu cach chuyen tiep su kien tuan tu qua cac Kafka Topic:
-  - OrderProducerService day su kien vao topic `order-events` (status: PENDING).
-  - PaymentConsumerService tieu thu tu topic `order-events`, xu ly thanh toan, cap nhat status sang PAID, day tiep vao topic `payment-events`.
-  - NotificationConsumerService tieu thu tu topic `payment-events`, xu ly gui email thong bao toi khach hang.
-
 ## 2. Cau truc du lieu JSON
 Mau du lieu su kien don hang duoc gui qua Kafka:
 ```json
